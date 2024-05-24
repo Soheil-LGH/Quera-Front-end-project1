@@ -1,0 +1,45 @@
+
+header {
+    padding: 10px 6%;
+    .header_content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .left_header {
+        display: flex;
+        gap: 20px;
+        color: white;
+        .enterApp {
+          background-color: rgb(26, 26, 209);
+          background: #2c7ef8;
+          padding: 0.8rem 1.6rem;
+          border-radius: 6px;
+          color: white;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .right_header {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .firstPage {
+        //   color: #2c7ef8;
+        }
+        .queralist {
+          font-weight: bold;
+        }
+      }
+      .lightSwitch {
+        background-image: url("../src/Light_Mode/light-dark.svg");
+        background-size: 2rem 2rem;
+        padding: 1.3rem;
+        display: flex;
+        background-repeat: no-repeat;
+        border: 2px solid rgb(177, 177, 177);
+        border-radius: 6px;
+        background-position: center center;
+      }
+    }
+  }
+  

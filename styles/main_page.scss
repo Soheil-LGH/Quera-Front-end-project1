@@ -1,0 +1,476 @@
+@font-face {
+  font-family: B_yekan;
+  src: url(./BYekan+.ttf);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "B_yekan", sans-serif, Tahoma, Geneva, Verdana;
+  text-decoration: none;
+}
+body {
+  direction: rtl;
+  overflow-x: hidden;
+}
+// header {
+//   padding: 10px 6%;
+//   .header_content {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     .left_header {
+//       display: flex;
+//       gap: 20px;
+//       color: white;
+//       .enterApp {
+//         background-color: rgb(26, 26, 209);
+//         background: #2c7ef8;
+//         padding: 0.8rem 1.6rem;
+//         border-radius: 6px;
+//         color: white;
+//         justify-content: center;
+//         align-items: center;
+//       }
+//     }
+//     .right_header {
+//       display: flex;
+//       gap: 20px;
+//       align-items: center;
+//       .firstPage {
+//         // color: #2c7ef8;
+//       }
+//       .queralist {
+//         font-weight: bold;
+//       }
+//     }
+//     .lightSwitch {
+//       background-image: url("../src/Light_Mode/light-dark.svg");
+//       background-size: 2rem 2rem;
+//       padding: 1.3rem;
+//       display: flex;
+//       background-repeat: no-repeat;
+//       border: 2px solid rgb(177, 177, 177);
+//       border-radius: 6px;
+//       background-position: center center;
+//     }
+//   }
+// }
+
+main {
+  background-image: linear-gradient(to bottom, #ebf3ff -7.33%, #ffffff 76.21%);
+  position: relative;
+  & > .ellipse,
+  .star {
+    z-index: 0;
+    position: absolute;
+  }
+  .ellipse28 {
+    top: 6rem;
+    left: 4rem;
+    // z-index: 0;
+  }
+  .ellipse29 {
+    top: 14rem;
+    right: -3rem;
+    // z-index: 0;
+  }
+  .ellipse30 {
+    bottom: 30rem;
+    right: -1rem;
+    // display: none;
+    // z-index: 0;
+  }
+  .ellipse31 {
+    bottom: 50rem;
+    left: -2rem;
+    // display: none;
+    // z-index: 0;
+  }
+  .ellipse32 {
+    top: 80rem;
+    right: -2rem;
+  }
+  .ellipse33 {
+    top: 100rem;
+    left: -1rem;
+    // z-index: 0;
+  }
+  .star1 {
+    top: 18rem;
+    left: 14rem;
+  }
+  .star2 {
+    top: 4rem;
+    right: 25rem;
+  }
+  .container {
+    // position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10%;
+    .site_abstract {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5rem;
+      .line1 {
+        font-size: 3rem;
+        z-index: 1;
+      }
+      .line2 {
+        font-size: 4rem;
+        font-weight: bold;
+        z-index: 1;
+      }
+      .svgArc {
+        background-image: url("../src/Light_Mode/Vector\ 74.svg");
+        width: 20rem;
+        height: 4rem;
+        background-repeat: no-repeat;
+        margin-top: 2rem;
+        z-index: 0;
+      }
+      .line3 {
+        //   position: relative;
+        width: 60%;
+        font-size: 1.25rem;
+        margin: 1rem;
+        z-index: 1;
+      }
+      .enterApp_aboutUs {
+        //   position: relative;
+        //   margin: 60px;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        z-index: 1;
+
+        .enterApp {
+          background-color: #2c7ef8;
+          width: 12em;
+          height: 3em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 6px;
+          color: white;
+        }
+        .aboutUs {
+          background-color: #ebf3fe;
+          border-radius: 6px;
+          width: 12em;
+          height: 3em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #2c7ef8;
+        }
+      }
+    }
+
+    .introPhoto1 {
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    .quera_app_specifications {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 4rem;
+      gap: 4rem;
+      .title_intro {
+        width: 50%;
+        gap: 144px;
+        .title {
+          font-size: 3rem;
+        }
+        .intro {
+          font-size: 1.125rem;
+          margin-top: 1rem;
+          line-height: 2em;
+          color: #444749;
+          gap: 4rem;
+        }
+      }
+
+      .cards {
+        gap: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .card1 .icon {
+          background-image: url("../src/Light_Mode/user-tag.svg");
+        }
+        .card2 .icon {
+          background-image: url("../src/Light_Mode/location-tick.svg");
+        }
+        .card3 .icon {
+          background-image: url("../src/Light_Mode/category.svg");
+        }
+        .card4 .icon {
+          background-image: url("../src/Light_Mode/brush.svg");
+        }
+        & > div {
+          background-color: #ffffff;
+          border: 1px solid #f5f6f8;
+          border-radius: 24px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          gap: 2rem;
+          z-index: 1;
+        }
+        .icon {
+          margin-top: 1rem;
+          width: 3rem;
+          height: 3rem;
+          background-color: #f5fbff;
+          background-repeat: no-repeat;
+          border-radius: 80px;
+          background-position: center center;
+        }
+        .title {
+          font-size: 1.25rem;
+          font-weight: bold;
+        }
+        .text {
+          width: 80%;
+          margin-bottom: 2rem;
+        }
+        // & > p{
+        //   font-weight: bold;
+        // }
+        // & > .text{
+        // }
+      }
+    }
+
+    .download_app {
+      display: flex;
+      flex-direction: row;
+      margin-top: 8rem;
+      justify-content: space-between;
+      .photo {
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        & > img {
+          border: 5px solid #e5e7e8;
+          border-radius: 30px;
+          z-index: 1;
+        }
+        .img1 {
+          width: 100%;
+          height: fit-content;
+        }
+        .img2 {
+          z-index: 1;
+          position: absolute;
+          top: 5rem;
+          right: 2rem;
+          width: 30%;
+        }
+      }
+      .description {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        gap: 1rem;
+        .top_title {
+          font-size: 1.125rem;
+          color: #444749;
+        }
+        .bottom_title {
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+        .text {
+          font-size: 1.125rem;
+          line-height: 2rem;
+          color: #444749;
+        }
+        .enter_app {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          .link {
+            color: #2c7ef8;
+          }
+        }
+      }
+    }
+    .reviews {
+      z-index: 1;
+      margin-top: 12rem;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #191c1e;
+      }
+      .subtitle {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #444749;
+        line-height: 2em;
+        margin-top: 2rem;
+      }
+      .cards {
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 1;
+        & > .card {
+          width: 300px;
+          flex-grow: 1;
+          border: 1px solid #f5f6f8;
+          border-radius: 1em;
+          margin: 0.5em;
+          z-index: 1;
+          background-color: white;
+          height: fit-content;
+
+          display: flex;
+          flex-direction: column;
+
+          & > .about {
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+            margin-top: 1em;
+            margin-right: 1em;
+          }
+        }
+        .name {
+          font-size: 1rem;
+          font-weight: 700;
+          color: #141414;
+          text-align: right;
+        }
+        .intro {
+          font-size: 0.875rem;
+          font-weight: 400;
+          color: #5c5c5c;
+          text-align: right;
+          margin: 0.5em 0;
+        }
+        .review {
+          font-size: 1rem;
+          font-weight: 300;
+          color: #444749;
+          line-height: 1.5em;
+          text-align: right;
+          margin: 1.5em 1em;
+        }
+
+        img {
+          width: 4rem;
+          border-radius: 2.5rem;
+          height: fit-content;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
+      .arrows {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2em;
+        .arrow {
+          border: 1px solid #e3e6e8;
+          padding: 0.6em;
+          border-radius: 0.5em;
+        }
+        .left_arrow {
+        }
+        .right_arrow {
+        }
+      }
+    }
+  }
+}
+
+// footer {
+//   display: flex; //
+//   flex-direction: column; //
+//   justify-content: center; //
+//   align-content: center;
+//   // margin-top: 2rem;
+//   // width: 80%;
+//   padding: 20px 8%;
+//   gap: 3rem;
+//   .title {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     // width: fit-content; //
+//     gap: 2rem;
+//     .line {
+//       columns: #afafaf;
+//     }
+//     .text {
+//       color: #141414;
+//       font-size: 1.25rem;
+//       font-weight: 400;
+//       // margin: 2rem;
+//       width: max-content;
+//     }
+//   }
+//   .contact_us {
+//     // width: 80%;
+//     margin: auto;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     margin: 2rem 0;
+//     // padding: 5rem;
+//     .right_footer {
+//       // justify-content: right;
+//       display: flex;
+//       flex-direction: column;
+//       gap: 1rem;
+//       .fax {
+//       }
+//       .telephone {
+//       }
+//       .address {
+//       }
+//     }
+//     .left_footer {
+//       // justify-content: left;
+//       display: flex;
+//       flex-direction: column;
+//       gap: 1.5rem;
+//       .line1 {
+//       }
+//       .line2 {
+//       }
+//       .send_email {
+//         .email {
+//         }
+//         .send {
+//         }
+//       }
+//     }
+//     & > div {
+//     }
+//   }
+
+//   .copyright {
+//     display: flex;
+//     justify-content: center;
+//     font-size: 0.875rem;
+//     font-weight: 400;
+//     color: #666666;
+//   }
+// }

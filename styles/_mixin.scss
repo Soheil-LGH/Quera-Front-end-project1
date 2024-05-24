@@ -1,0 +1,6 @@
+@mixin fle_center_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @content
+}

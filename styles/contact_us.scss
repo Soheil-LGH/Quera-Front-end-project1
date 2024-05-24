@@ -1,0 +1,16 @@
+@font-face {
+  font-family: B_yekan;
+  src: url(./BYekan+.ttf);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "B_yekan", sans-serif, Tahoma, Geneva, Verdana;
+  text-decoration: none;
+}
+body {
+  direction: rtl;
+  overflow-x: hidden;
+}
+
