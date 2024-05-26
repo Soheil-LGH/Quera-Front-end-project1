@@ -13,4 +13,96 @@
 body {
   direction: rtl;
   overflow-x: hidden;
+}
+
+.container {
+  padding: 3em 8%;
+}
+.container .contact_message {
+  display: flex;
+  flex-direction: row;
+  border: #f5f6f8 1px solid;
+  border-radius: 24px;
+  padding: 2rem;
+}
+.container .contact_message .contact_info {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+.container .contact_message .contact_info .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #070d31;
+}
+.container .contact_message .contact_info .subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #6f7076;
+  line-height: 4.5em;
+}
+.container .contact_message .contact_info .phone {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #070d31;
+  margin-top: 3em;
+}
+.container .contact_message .contact_info .email {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #070d31;
+  margin-top: 2em;
+}
+.container .contact_message .contact_info .social_media {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8em;
+}
+.container .contact_message .contact_info .social_media > .icon {
+  background-size: 2rem 2rem;
+  padding: 1.3rem;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.container .contact_message .contact_info .social_media .github {
+  background-image: url("../src/Light_Mode/github_Icon.svg");
+}
+.container .contact_message .contact_info .social_media .twitter {
+  background-image: url("../src/Light_Mode/twitter.svg");
+}
+.container .contact_message .contact_info .social_media .linkedin {
+  background-image: url("../src/Light_Mode/linkedin.svg");
+}
+.container .contact_message .vertical_line {
+  background-color: #e0e0e0;
+  width: 2px;
+  height: 600px;
+  margin: 2rem;
+  border-radius: 2px;
+}
+.container .contact_message .send_message {
+  display: flex;
+  flex-direction: column;
+}
+.container .contact_message .send_message input {
+  border: #e6e6e6 1px solid;
+  border-radius: 6px;
+  height: 50px;
+  margin: 2rem 0;
+}
+.container .contact_message .send_message input.message {
+  height: 150px;
+  width: 100%;
+}
+.container .contact_message .send_message button {
+  padding: 0.5rem 2rem;
+  width: 100%;
+  background-color: #2C7EF8;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  justify-content: end;
+  border: #2C7EF8 1px solid;
 }/*# sourceMappingURL=contact_us.css.map */

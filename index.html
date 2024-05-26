@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <link rel="stylesheet" href="./styles/header.css">
+      <link rel="stylesheet" href="./styles/header.css" />
       <div class="header_content">
         <div class="right_header">
           <p class="queralist">کوئرا لیست</p>
@@ -23,7 +23,21 @@
         </div>
         <div class="left_header">
           <a href="" class="enterApp">ورود به اپلیکیشن</a>
-          <a href="" class="lightSwitch"></a>
+          <a href="#lightSwitchID" class="lightSwitch"></a>
+          <div id="lightSwitchID" class="lightSwitch_window">
+            <a href="#" class="light mode">
+              <div class="light_img img"></div>
+              <p>حالت روشن</p>
+            </a>
+            <a href="#" class="dark mode">
+              <div class="dark_img img"></div>
+              <p>حالت تاریک</p>
+            </a>
+            <a href="#" class="followDevice mode">
+              <div class="followDevice_img img"></div>
+              <p>پیروی از دستگاه</p>
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -266,12 +280,10 @@
       </div>
     </main>
     <footer>
-      <link rel="stylesheet" href="./styles/footer.css">
-      <div class="title">
-        <img class="line" src="./src/Light_Mode/Vector 23.svg" alt="" />
-        <p class="text">کوئرالیست</p>
-        <img class="line" src="./src/Light_Mode/Vector 23.svg" alt="" />
-      </div>
+      <link rel="stylesheet" href="./styles/footer.css" />
+
+      <p class="text_and_line">کوئرا لیست</p>
+
       <div class="contact_us">
         <div class="right_footer">
           <p class="fax">
@@ -293,7 +305,7 @@
             اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.
           </p>
           <div class="send_email">
-            <input class="email" type="email" placeholder="ایمیل" />
+            <input class="email" type="email" placeholder="ایمیل" required />
             <button class="send">ارسال</button>
           </div>
         </div>

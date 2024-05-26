@@ -1,74 +1,104 @@
 footer {
-    display: flex; //
-    flex-direction: column; //
-    justify-content: center; //
-    align-content: center;
-    // margin-top: 2rem;
-    // width: 80%;
-    padding: 20px 8%;
-    gap: 3rem;
-    .title {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      // width: fit-content; //
-      gap: 2rem;
-      .line {
-        columns: #afafaf;
-      }
-      .text {
-        color: #141414;
-        font-size: 1.25rem;
-        font-weight: 400;
-        // margin: 2rem;
-        width: max-content;
-      }
-    }
-    .contact_us {
-      // width: 80%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 2rem 0;
-      // padding: 5rem;
-      .right_footer {
-        // justify-content: right;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        .fax {
-        }
-        .telephone {
-        }
-        .address {
-        }
-      }
-      .left_footer {
-        // justify-content: left;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        .line1 {
-        }
-        .line2 {
-        }
-        .send_email {
-          .email {
-          }
-          .send {
-          }
-        }
-      }
-      & > div {
-      }
-    }
-  
-    .copyright {
-      display: flex;
-      justify-content: center;
-      font-size: 0.875rem;
-      font-weight: 400;
-      color: #666666;
+  display: flex; //
+  flex-direction: column; //
+  justify-content: center; //
+  align-content: center;
+  // margin-top: 2rem;
+  // width: 80%;
+  padding: 20px 8%;
+  gap: 3rem;
+
+  .text_and_line {
+    color: #141414;
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    &::after,
+    &::before {
+      content: "";
+      width: 300px;
+      height: 1px;
+      background-color: #afafaf;
     }
   }
+
+  .contact_us {
+    // width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+    // padding: 5rem;
+    .right_footer {
+      width: 300px;
+      // justify-content: right;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .fax {
+      }
+      .telephone {
+      }
+      .address {
+      }
+    }
+    .left_footer {
+      // justify-content: left;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      .line1 {
+        color: #242424;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      .line2 {
+        font-weight: 400;
+        color: #242424;
+        line-height: 24px;
+      }
+      .send_email {
+        position: relative;
+
+        .email {
+          // border: none;
+          // flex-grow: 1;
+          // height: 2em;
+          height: 40px;
+          border: #a1a1a1 1px solid;
+          border-radius: 10px;
+          width: 100%;
+        }
+        .send {
+          background-color: #2c7ef8;
+          border: #2c7ef8 1px solid;
+          padding: 0.2rem;
+          margin: 0.2rem;
+          width: 4.5em;
+          border-radius: 8px;
+          color: white;
+          position: absolute;
+          left: 0.5rem;
+          top: 0.18rem;
+        }
+      }
+    }
+    & > div {
+    }
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #666666;
+  }
+}

@@ -12,4 +12,83 @@
 body {
   direction: rtl;
   overflow-x: hidden;
+  background-color: #fbfbfb;
+}
+.container{
+  padding: 6rem 10%;
+  .about_me{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    .text{
+      display: flex;
+      flex-direction: column;
+      border: #F5F6F8 1px solid;
+      border-radius: 24px;
+      background-color: #ffffff;
+      gap: 1rem;
+      padding: 3%;
+      .title{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #070D31;
+      }
+      .name{
+        font-size: 2rem;
+        font-weight: 400;
+        color: #575757;
+      }
+      .intro{
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #444749;
+        line-height: 2.2em;
+        text-align: right;
+      }
+    }
+    .photo_summary{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 80%;
+      .photo{
+        border-radius: 24px;
+        width: 40vw;
+        // flex-grow: 1;
+        // height: auto;
+        
+      }
+      .tiles{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: #F5F6F8 1px solid;
+        border-radius: 24px;
+        background-color: #ffffff;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+        & > .tile{
+          display: flex;
+          flex-direction: column;
+          text-align: right;
+          padding: 1rem;
+          width: 250px;
+          border-radius: 16px;
+          background-color: #F9FAFB;
+          margin: 0.5rem 0;
+          & > .line1{
+            font-size: 2rem;
+            font-weight: 600;
+            color: #070D31;
+          }
+          & > .line2{
+            font-size: 1.125rem;
+            font-weight: 400;
+            color: #707070;
+            margin-top: 0.5em;
+          }
+        }
+      }
+    }
+  }
 }

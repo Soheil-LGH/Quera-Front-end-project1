@@ -50,11 +50,11 @@ main .ellipse33 {
 }
 main .star1 {
   top: 18rem;
-  left: 14rem;
+  left: 14vw;
 }
 main .star2 {
   top: 4rem;
-  right: 25rem;
+  right: 25vw;
 }
 main .container {
   text-align: center;
@@ -147,6 +147,7 @@ main .container .quera_app_specifications .cards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 main .container .quera_app_specifications .cards .card1 .icon {
   background-image: url("../src/Light_Mode/user-tag.svg");
@@ -170,6 +171,8 @@ main .container .quera_app_specifications .cards > div {
   justify-content: space-evenly;
   gap: 2rem;
   z-index: 1;
+  width: 200px;
+  flex-grow: 1;
 }
 main .container .quera_app_specifications .cards .icon {
   margin-top: 1rem;
@@ -209,6 +212,7 @@ main .container .download_app .photo .img1 {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
+  background-color: #fbfdff;
 }
 main .container .download_app .photo .img2 {
   z-index: 1;

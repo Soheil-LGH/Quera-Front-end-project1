@@ -10,14 +10,70 @@ header .header_content .left_header {
   display: flex;
   gap: 20px;
   color: white;
+  position: relative;
 }
 header .header_content .left_header .enterApp {
-  background-color: rgb(26, 26, 209);
   background: #2c7ef8;
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem 1.2rem;
   border-radius: 6px;
   color: white;
   justify-content: center;
+  align-items: center;
+}
+header .header_content .left_header .lightSwitch {
+  background-image: url("../src/Light_Mode/light-dark.svg");
+  background-size: 1.8rem 1.8rem;
+  padding: 1.3rem;
+  display: flex;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(177, 177, 177);
+  border-radius: 6px;
+  background-position: center center;
+}
+header .header_content .left_header .lightSwitch_window {
+  width: 230px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -170px;
+  left: 0;
+  border: #ebedef 1px solid;
+  border-radius: 8px;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.02);
+}
+header .header_content .left_header .lightSwitch_window > :target {
+  visibility: visible;
+}
+header .header_content .left_header .lightSwitch_window .light_img {
+  background-image: url("../src/Light_Mode/light-outline.svg");
+}
+header .header_content .left_header .lightSwitch_window .dark_img {
+  background-image: url("../src/Light_Mode/dark-outline.svg");
+}
+header .header_content .left_header .lightSwitch_window .followDevice_img {
+  background-image: url("../src/Light_Mode/light-dark.svg");
+}
+header .header_content .left_header .lightSwitch_window > .mode {
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .header_content .left_header .lightSwitch_window > .mode > .img {
+  background-size: 1.5rem 1.5rem;
+  padding: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+header .header_content .left_header .lightSwitch_window > .mode > p {
+  display: flex;
+  text-align: right;
+  flex-grow: 1;
+  color: black;
   align-items: center;
 }
 header .header_content .right_header {
@@ -27,14 +83,4 @@ header .header_content .right_header {
 }
 header .header_content .right_header .queralist {
   font-weight: bold;
-}
-header .header_content .lightSwitch {
-  background-image: url("../src/Light_Mode/light-dark.svg");
-  background-size: 2rem 2rem;
-  padding: 1.3rem;
-  display: flex;
-  background-repeat: no-repeat;
-  border: 2px solid rgb(177, 177, 177);
-  border-radius: 6px;
-  background-position: center center;
 }/*# sourceMappingURL=header.css.map */

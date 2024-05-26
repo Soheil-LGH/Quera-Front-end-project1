@@ -1,38 +1,26 @@
-
 header {
-    padding: 10px 6%;
-    .header_content {
+  padding: 10px 6%;
+  .header_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .left_header {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      .left_header {
-        display: flex;
-        gap: 20px;
+      gap: 20px;
+      color: white;
+      position: relative;
+      .enterApp {
+        // background-color: rgb(26, 26, 209);
+        background: #2c7ef8;
+        padding: 0.8rem 1.2rem;
+        border-radius: 6px;
         color: white;
-        .enterApp {
-          background-color: rgb(26, 26, 209);
-          background: #2c7ef8;
-          padding: 0.8rem 1.6rem;
-          border-radius: 6px;
-          color: white;
-          justify-content: center;
-          align-items: center;
-        }
-      }
-      .right_header {
-        display: flex;
-        gap: 20px;
+        justify-content: center;
         align-items: center;
-        .firstPage {
-        //   color: #2c7ef8;
-        }
-        .queralist {
-          font-weight: bold;
-        }
       }
       .lightSwitch {
         background-image: url("../src/Light_Mode/light-dark.svg");
-        background-size: 2rem 2rem;
+        background-size: 1.8rem 1.8rem;
         padding: 1.3rem;
         display: flex;
         background-repeat: no-repeat;
@@ -40,6 +28,75 @@ header {
         border-radius: 6px;
         background-position: center center;
       }
+
+      .lightSwitch_window {
+        // visibility: hidden;
+        & > :target {
+          visibility: visible;
+        }
+
+        width: 230px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: -170px;
+        left: 0;
+        border: #ebedef 1px solid;
+        border-radius: 8px;
+        z-index: 2;
+        // background-color: white;
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.02);
+        .light_img {
+          background-image: url("../src/Light_Mode/light-outline.svg");
+        }
+        .dark_img {
+          background-image: url("../src/Light_Mode/dark-outline.svg");
+        }
+        .followDevice_img {
+          background-image: url("../src/Light_Mode/light-dark.svg");
+        }
+        & > .mode {
+          gap: 15px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          & > .img {
+            background-size: 1.5rem 1.5rem;
+            padding: 1.5rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+          & > p {
+            display: flex;
+            text-align: right;
+            flex-grow: 1;
+            color: black;
+            align-items: center;
+          }
+          // margin: 8px;
+          // &::after {
+          //   content: "";
+          //   width: 80px;
+          //   height: 2px;
+          //   background: #2c7ef8;
+          // }
+        }
+      }
+      &:target {
+      }
+    }
+    .right_header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      .firstPage {
+        //   color: #2c7ef8;
+      }
+      .queralist {
+        font-weight: bold;
+      }
     }
   }
-  
+}

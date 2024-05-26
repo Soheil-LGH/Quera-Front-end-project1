@@ -13,4 +13,81 @@
 body {
   direction: rtl;
   overflow-x: hidden;
+  background-color: #fbfbfb;
+}
+
+.container {
+  padding: 6rem 10%;
+}
+.container .about_me {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+}
+.container .about_me .text {
+  display: flex;
+  flex-direction: column;
+  border: #F5F6F8 1px solid;
+  border-radius: 24px;
+  background-color: #ffffff;
+  gap: 1rem;
+  padding: 3%;
+}
+.container .about_me .text .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #070D31;
+}
+.container .about_me .text .name {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #575757;
+}
+.container .about_me .text .intro {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #444749;
+  line-height: 2.2em;
+  text-align: right;
+}
+.container .about_me .photo_summary {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80%;
+}
+.container .about_me .photo_summary .photo {
+  border-radius: 24px;
+  width: 40vw;
+}
+.container .about_me .photo_summary .tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: #F5F6F8 1px solid;
+  border-radius: 24px;
+  background-color: #ffffff;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+.container .about_me .photo_summary .tiles > .tile {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 1rem;
+  width: 250px;
+  border-radius: 16px;
+  background-color: #F9FAFB;
+  margin: 0.5rem 0;
+}
+.container .about_me .photo_summary .tiles > .tile > .line1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #070D31;
+}
+.container .about_me .photo_summary .tiles > .tile > .line2 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #707070;
+  margin-top: 0.5em;
 }/*# sourceMappingURL=about_us.css.map */
