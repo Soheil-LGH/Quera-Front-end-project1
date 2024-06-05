@@ -10,7 +10,6 @@ header {
       color: white;
       position: relative;
       .enterApp {
-        // background-color: rgb(26, 26, 209);
         background: #2c7ef8;
         padding: 0.8rem 1.2rem;
         border-radius: 6px;
@@ -18,26 +17,41 @@ header {
         justify-content: center;
         align-items: center;
       }
-      .lightSwitch {
+
+      input[type="checkbox"] {
+        display: none;
+      }
+      label{
         background-image: url("../src/Light_Mode/light-dark.svg");
         background-size: 1.8rem 1.8rem;
         padding: 1.3rem;
         display: flex;
         background-repeat: no-repeat;
-        border: 2px solid rgb(177, 177, 177);
+        border: 1px solid #E3E3E3;
         border-radius: 6px;
         background-position: center center;
+        cursor: pointer;
+
       }
+      input[type="checkbox"]:checked ~ .lightSwitch_window{
+        display: block;
+      }
+      // light switch, commented in html
+      // .lightSwitch {
+      //   background-image: url("../src/Light_Mode/light-dark.svg");
+      //   background-size: 1.8rem 1.8rem;
+      //   padding: 1.3rem;
+      //   display: flex;
+      //   background-repeat: no-repeat;
+      //   border: 2px solid rgb(177, 177, 177);
+      //   border-radius: 6px;
+      //   background-position: center center;
+      // }
 
       .lightSwitch_window {
-        // visibility: hidden;
-        & > :target {
-          visibility: visible;
-        }
-
+        display: none;
         width: 230px;
         height: 150px;
-        display: flex;
         flex-direction: column;
         position: absolute;
         bottom: -170px;
@@ -46,8 +60,8 @@ header {
         border-radius: 8px;
         z-index: 2;
         // background-color: white;
-        backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, 0.02);
+        backdrop-filter: blur(15px);
+        background-color: rgba(0, 0, 0, 0.03);
         .light_img {
           background-image: url("../src/Light_Mode/light-outline.svg");
         }
@@ -75,16 +89,7 @@ header {
             color: black;
             align-items: center;
           }
-          // margin: 8px;
-          // &::after {
-          //   content: "";
-          //   width: 80px;
-          //   height: 2px;
-          //   background: #2c7ef8;
-          // }
         }
-      }
-      &:target {
       }
     }
     .right_header {

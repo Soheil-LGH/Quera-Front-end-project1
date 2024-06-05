@@ -3,7 +3,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 20px 8%;
+  padding: 20px 10%;
   gap: 3rem;
 }
 footer .text_and_line {
@@ -60,6 +60,8 @@ footer .contact_us .left_footer .send_email .email {
   border: #a1a1a1 1px solid;
   border-radius: 10px;
   width: 100%;
+  outline: none;
+  padding: 1rem;
 }
 footer .contact_us .left_footer .send_email .send {
   background-color: #2c7ef8;
@@ -70,8 +72,8 @@ footer .contact_us .left_footer .send_email .send {
   border-radius: 8px;
   color: white;
   position: absolute;
-  left: 0.5rem;
-  top: 0.18rem;
+  left: 0.2rem;
+  top: 0.2rem;
 }
 footer .copyright {
   display: flex;

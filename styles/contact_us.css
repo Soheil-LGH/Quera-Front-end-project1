@@ -24,11 +24,12 @@ body {
   border: #f5f6f8 1px solid;
   border-radius: 24px;
   padding: 2rem;
+  box-shadow: 0px 4px 63px 0px rgba(0, 0, 0, 0.031372549);
 }
 .container .contact_message .contact_info {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  width: 50%;
 }
 .container .contact_message .contact_info .title {
   font-size: 2.5rem;
@@ -84,16 +85,48 @@ body {
 .container .contact_message .send_message {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  position: relative;
+}
+.container .contact_message .send_message div {
+  gap: 4rem;
+}
+.container .contact_message .send_message form {
+  width: 100%;
+}
+.container .contact_message .send_message .full-name {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.container .contact_message .send_message .full-name > div {
+  width: 50%;
 }
 .container .contact_message .send_message input {
   border: #e6e6e6 1px solid;
   border-radius: 6px;
   height: 50px;
-  margin: 2rem 0;
+  margin: 0.6rem 0;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  outline: none;
+  padding: 0 1rem;
 }
-.container .contact_message .send_message input.message {
+.container .contact_message .send_message textarea {
+  margin-top: 0.5rem;
   height: 150px;
   width: 100%;
+  overflow: auto;
+  border-radius: 8px;
+  border: #e6e6e6 1px solid;
+  padding: 1rem;
+  outline: none;
+  overflow-wrap: break-word;
+}
+.container .contact_message .send_message input.tel {
+  text-align: right;
 }
 .container .contact_message .send_message button {
   padding: 0.5rem 2rem;
@@ -105,4 +138,5 @@ body {
   font-weight: 700;
   justify-content: end;
   border: #2C7EF8 1px solid;
+  margin-top: 2rem;
 }/*# sourceMappingURL=contact_us.css.map */

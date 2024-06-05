@@ -20,20 +20,27 @@ header .header_content .left_header .enterApp {
   justify-content: center;
   align-items: center;
 }
-header .header_content .left_header .lightSwitch {
+header .header_content .left_header input[type=checkbox] {
+  display: none;
+}
+header .header_content .left_header label {
   background-image: url("../src/Light_Mode/light-dark.svg");
   background-size: 1.8rem 1.8rem;
   padding: 1.3rem;
   display: flex;
   background-repeat: no-repeat;
-  border: 2px solid rgb(177, 177, 177);
+  border: 1px solid #E3E3E3;
   border-radius: 6px;
   background-position: center center;
+  cursor: pointer;
+}
+header .header_content .left_header input[type=checkbox]:checked ~ .lightSwitch_window {
+  display: block;
 }
 header .header_content .left_header .lightSwitch_window {
+  display: none;
   width: 230px;
   height: 150px;
-  display: flex;
   flex-direction: column;
   position: absolute;
   bottom: -170px;
@@ -41,12 +48,9 @@ header .header_content .left_header .lightSwitch_window {
   border: #ebedef 1px solid;
   border-radius: 8px;
   z-index: 2;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.02);
-}
-header .header_content .left_header .lightSwitch_window > :target {
-  visibility: visible;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.03);
 }
 header .header_content .left_header .lightSwitch_window .light_img {
   background-image: url("../src/Light_Mode/light-outline.svg");

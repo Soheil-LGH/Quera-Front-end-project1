@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>پروژه فرانت کوئرا</title>
     <link rel="stylesheet" href="./styles/main_page.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -13,7 +15,6 @@
   </head>
   <body>
     <header>
-      <link rel="stylesheet" href="./styles/header.css" />
       <div class="header_content">
         <div class="right_header">
           <p class="queralist">کوئرا لیست</p>
@@ -23,7 +24,9 @@
         </div>
         <div class="left_header">
           <a href="" class="enterApp">ورود به اپلیکیشن</a>
-          <a href="#lightSwitchID" class="lightSwitch"></a>
+          <!-- <a href="#lightSwitchID" class="lightSwitch"></a> -->
+          <input type="checkbox" id="lightSwitch" class="lightSwitch" />
+          <label for="lightSwitch" class="label"></label>
           <div id="lightSwitchID" class="lightSwitch_window">
             <a href="#" class="light mode">
               <div class="light_img img"></div>
@@ -280,10 +283,7 @@
       </div>
     </main>
     <footer>
-      <link rel="stylesheet" href="./styles/footer.css" />
-
       <p class="text_and_line">کوئرا لیست</p>
-
       <div class="contact_us">
         <div class="right_footer">
           <p class="fax">

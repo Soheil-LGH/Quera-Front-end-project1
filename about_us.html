@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>درباره ما</title>
     <link rel="stylesheet" href="./styles/about_us.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -13,7 +15,6 @@
   </head>
   <body>
     <header>
-      <link rel="stylesheet" href="./styles/header.css" />
       <div class="header_content">
         <div class="right_header">
           <p class="queralist">کوئرا لیست</p>
@@ -23,7 +24,23 @@
         </div>
         <div class="left_header">
           <a href="" class="enterApp">ورود به اپلیکیشن</a>
-          <a href="" class="lightSwitch"></a>
+          <!-- <a href="#lightSwitchID" class="lightSwitch"></a> -->
+          <input type="checkbox" id="lightSwitch" class="lightSwitch" />
+          <label for="lightSwitch" class="label"></label>
+          <div id="lightSwitchID" class="lightSwitch_window">
+            <a href="#" class="light mode">
+              <div class="light_img img"></div>
+              <p>حالت روشن</p>
+            </a>
+            <a href="#" class="dark mode">
+              <div class="dark_img img"></div>
+              <p>حالت تاریک</p>
+            </a>
+            <a href="#" class="followDevice mode">
+              <div class="followDevice_img img"></div>
+              <p>پیروی از دستگاه</p>
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -37,13 +54,13 @@
               کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر
               اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر
               دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن
-              استفاده نمایند. <br>کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از
-              استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل
-              اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی
-              بر وب آن استفاده نمایند. <br>کاربران اندروید می‌توانند اپلیکیشن
-              کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین
-              کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور
-              می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+              استفاده نمایند. <br />کاربران اندروید می‌توانند اپلیکیشن کوئرالیست
+              را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم
+              عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه
+              مبتنی بر وب آن استفاده نمایند. <br />کاربران اندروید می‌توانند
+              اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند.
+              همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از
+              اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
             </p>
           </div>
           <div class="photo_summary">
@@ -71,10 +88,7 @@
       </div>
     </main>
     <footer>
-      <link rel="stylesheet" href="./styles/footer.css" />
-
       <p class="text_and_line">کوئرا لیست</p>
-
       <div class="contact_us">
         <div class="right_footer">
           <p class="fax">
